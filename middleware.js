@@ -6,7 +6,7 @@ var middleware = {
 		next();
 	},
 	logger: function (req,res,next) {
-		console.log(req.method+ " " + req.originalUrl+ " " + new Date().toString());
+		console.log("REQUEST: "+ req.method+ " " + req.originalUrl+ " " + new Date().toString());
 		next();
 	}
 };
